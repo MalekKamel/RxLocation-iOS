@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05AFE686AB28277D4FC185F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		05AFE686AB28277D4FC185F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		10541DE6E37780126196184F /* Pods_RxLocation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxLocation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DBF1E383B555ED77BFFC24F /* Pods-RxLocation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLocation_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RxLocation_Tests/Pods-RxLocation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		36BF679F3332CB53C4F71987 /* Pods-RxLocation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLocation_Example.release.xcconfig"; path = "Target Support Files/Pods-RxLocation_Example/Pods-RxLocation_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -44,9 +44,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7B7974FC72D56903B484523E /* Pods-RxLocation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLocation_Tests.release.xcconfig"; path = "Target Support Files/Pods-RxLocation_Tests/Pods-RxLocation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8F9CB53D187DEE955F82E15D /* Pods-RxLocation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLocation_Example.debug.xcconfig"; path = "Target Support Files/Pods-RxLocation_Example/Pods-RxLocation_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B9992F0A4F06E6C4553854A0 /* RxLocation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxLocation.podspec; path = ../RxLocation.podspec; sourceTree = "<group>"; };
+		B9992F0A4F06E6C4553854A0 /* RxLocation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxLocation.podspec; path = ../RxLocation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CECC7C2ADD7D2FA75B3E105D /* Pods_RxLocation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxLocation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F18057212E0D0A0615C95808 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F18057212E0D0A0615C95808 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				2DBF1E383B555ED77BFFC24F /* Pods-RxLocation_Tests.debug.xcconfig */,
 				7B7974FC72D56903B484523E /* Pods-RxLocation_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,6 +213,11 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -227,6 +231,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -292,10 +297,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxLocation_Example/Pods-RxLocation_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxLocation/RxLocation.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

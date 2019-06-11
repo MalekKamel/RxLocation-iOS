@@ -7,17 +7,26 @@
 //
 
 import UIKit
+import RxLocation
+import RxSwift
 
 class ViewController: UIViewController {
+    private var rxLocation: RxLocation?
+    let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        rxLocation =  RxLocation(authorization: .authorizeAlways)
+
+        rxLocation?.requestCurrentLocation()
+                .subscribe(onNext: { location in
+                    print(location)
+                }).disposed(by: disposeBag)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    deinit {
+        // this is useful only in case of using .requestLocationUpdates()
+        rxLocation?.stopLocationUpdates()
     }
 
 }

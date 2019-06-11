@@ -1,11 +1,17 @@
 use_frameworks!
 
 target 'RxLocation_Example' do
+  
   pod 'RxLocation', :path => '../'
-
+  pod 'RxSwift',    '~> 4.0'
+  
+  
+  
+  
   target 'RxLocation_Tests' do
     inherit! :search_paths
 
     
   end
+  
 end

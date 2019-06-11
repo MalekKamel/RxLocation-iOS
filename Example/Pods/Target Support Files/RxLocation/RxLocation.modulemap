@@ -1,0 +1,6 @@
+framework module RxLocation {
+  umbrella header "RxLocation-umbrella.h"
+
+  export *
+  module * { export * }
+}

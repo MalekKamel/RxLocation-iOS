@@ -35,3 +35,12 @@ Carthage/Build
 # `pod install` in .travis.yml
 #
 # Pods/
+
+/.idea/.name
+/.idea/Example.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/runConfigurations/RxLocation_Example.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/.idea/xcode.xml
