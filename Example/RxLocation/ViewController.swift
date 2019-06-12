@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         rxLocation =  RxLocation(authorization: .authorizeAlways)
 
         if #available(iOS 11.0, *) {
-            rxLocation?.locationManager = CLLocationManager()
             rxLocation?.locationManager.showsBackgroundLocationIndicator = true
         }
 

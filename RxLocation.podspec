@@ -40,6 +40,6 @@ DESC
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'RxSwift',    '~> 5.0'
-  s.swift_version = '5.o'
+  s.swift_version = '5.0'
 
 end
