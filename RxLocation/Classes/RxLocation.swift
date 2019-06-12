@@ -35,7 +35,7 @@ public class RxLocation: NSObject {
     public init(authorization: Authorization) {
         self.authorization = authorization
         super.init()
-        retainMe()
+//        retainInstance()
     }
     
     public func requestLocationUpdates() -> Observable<[CLLocation]> {
@@ -61,7 +61,7 @@ public class RxLocation: NSObject {
     
     public func stopLocationUpdates(){
         locationManager.stopUpdatingLocation()
-        releaseMe()
+//        releaseInstance()
     }
     
     private func setupLocationManager(){
@@ -76,6 +76,21 @@ public class RxLocation: NSObject {
         }
         
     }
+
+//    @discardableResult
+//    func retainInstance() -> Self {
+//        _ = Unmanaged.passRetained(self)
+//        return self
+//    }
+
+    /// Same as autorelease(), which the compiler no longer lets us call.
+    ///
+    /// This function does an autorelease() rather than release() to give you more flexibility.
+//    @discardableResult
+//    func releaseInstance() -> Self {
+//        _ = Unmanaged.passUnretained(self).autorelease()
+//        return self
+//    }
     
 }
 

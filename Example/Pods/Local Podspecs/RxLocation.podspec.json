@@ -2,17 +2,17 @@
   "name": "RxLocation",
   "version": "0.1.0",
   "summary": "An RX wrapper for iOS location",
-  "description": "An RX wrapper for iOS location. It's simple and powerfull.",
-  "homepage": "https://github.com/ShabanKamell/RxLocation",
+  "description": "An RX wrapper for iOS location. It's simple and powerful.",
+  "homepage": "https://github.com/ShabanKamell/RxLocation-iOS",
   "license": {
-    "type": "MIT",
+    "type": "Apache 2.0",
     "file": "LICENSE"
   },
   "authors": {
-    "ShabanKamell": "ahmedabukhater6@gmail.com"
+    "ShabanKamell": "sh3ban.kamel@gmail.com"
   },
   "source": {
-    "git": "https://github.com/ShabanKamell/RxLocation.git",
+    "git": "https://github.com/ShabanKamell/RxLocation-iOS.git",
     "tag": "0.1.0"
   },
   "platforms": {
