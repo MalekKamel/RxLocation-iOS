@@ -13,6 +13,7 @@ An RX wrapper for iOS location. It's simple and powerful.
 var rxLocation = RxLocation(authorization: .authorizeAlways)
 
 // Current location
+
    rxLocation.requestCurrentLocation()
       .subscribe(onNext: { location in
           print(location)
