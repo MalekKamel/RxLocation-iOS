@@ -35,7 +35,7 @@ public class RxLocation: NSObject {
     public init(authorization: Authorization) {
         self.authorization = authorization
         super.init()
-//        retainInstance()
+        retainMe()
     }
     
     public func requestLocationUpdates() -> Observable<[CLLocation]> {
@@ -50,7 +50,7 @@ public class RxLocation: NSObject {
         requestType = .currentLocation
         setupLocationManager()
         
-        ps.subscribe(onNext: { locations in
+       _ = ps.subscribe(onNext: { locations in
             publishSubject.onNext(locations.last!)
             publishSubject.onCompleted()
             self.ps.dispose()
@@ -61,7 +61,7 @@ public class RxLocation: NSObject {
     
     public func stopLocationUpdates(){
         locationManager.stopUpdatingLocation()
-//        releaseInstance()
+        releaseMe()
     }
     
     private func setupLocationManager(){
@@ -76,22 +76,6 @@ public class RxLocation: NSObject {
         }
         
     }
-
-//    @discardableResult
-//    func retainInstance() -> Self {
-//        _ = Unmanaged.passRetained(self)
-//        return self
-//    }
-
-    /// Same as autorelease(), which the compiler no longer lets us call.
-    ///
-    /// This function does an autorelease() rather than release() to give you more flexibility.
-//    @discardableResult
-//    func releaseInstance() -> Self {
-//        _ = Unmanaged.passUnretained(self).autorelease()
-//        return self
-//    }
-    
 }
 
 // MARK: - CLLocationManagerDelegate
@@ -127,21 +111,4 @@ extension RxLocation: CLLocationManagerDelegate {
         }
     }
 
-    /*
-
-    func locationManager(
-        _ manager: CLLocationManager,
-        didChangeAuthorization status: CLAuthorizationStatus
-        ) {
-
-    }
-    
-    func locationManager(
-        _ manager: CLLocationManager,
-        didUpdateLocations locations: [CLLocation]
-        ) {
-
-    }
-
-    */
 }
