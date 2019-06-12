@@ -12,12 +12,13 @@ An RX wrapper for iOS location. It's simple and powerful.
 ```swift
 var rxLocation = RxLocation(authorization: .authorizeAlways)
 
+// Current location
    rxLocation.requestCurrentLocation()
       .subscribe(onNext: { location in
           print(location)
        })
                 
-// OR
+// Location updates
 
   rxLocation.requestLocationUpdates()
       .subscribe(onNext: { locations in
