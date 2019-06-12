@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxLocation'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'An RX wrapper for iOS location'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ DESC
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'RxSwift',    '~> 4.0'
-  s.swift_version = '4.2'
+  s.dependency 'RxSwift',    '~> 5.0'
+  s.swift_version = '5.o'
 
 end

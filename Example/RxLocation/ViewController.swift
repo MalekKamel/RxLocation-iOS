@@ -9,6 +9,7 @@
 import UIKit
 import RxLocation
 import RxSwift
+import CoreLocation
 
 class ViewController: UIViewController {
     private var rxLocation: RxLocation?
@@ -17,6 +18,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         rxLocation =  RxLocation(authorization: .authorizeAlways)
+
+        if #available(iOS 11.0, *) {
+            rxLocation?.locationManager = CLLocationManager()
+            rxLocation?.locationManager.showsBackgroundLocationIndicator = true
+        }
 
         rxLocation?.requestCurrentLocation()
                 .subscribe(onNext: { location in

@@ -22,8 +22,8 @@ pod 'RxLocation'
 
 ## Author
 
-ShabanKamell, ahmedabukhater6@gmail.com
+ShabanKamell, sh3ban.kamel@gmail.com
 
 ## License
 
-RxLocation is available under the MIT license. See the LICENSE file for more info.
+RxLocation is available under the Apache license v2.0. See the LICENSE file for more info.

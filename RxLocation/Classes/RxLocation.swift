@@ -22,7 +22,7 @@ private enum RequestType {
 }
 
 public class RxLocation: NSObject {
-    lazy var locationManager: CLLocationManager = {
+    public lazy var locationManager: CLLocationManager = {
         return CLLocationManager()
     }()
     private var backgroundDelegate: BackgroundDelegate = nil
