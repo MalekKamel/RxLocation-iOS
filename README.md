@@ -10,6 +10,11 @@ An RX wrapper for iOS location. It's simple and powerful.
 [![Platform](https://img.shields.io/cocoapods/p/RxLocation.svg?style=flat)](https://cocoapods.org/pods/RxLocation)
 
 ## Usage
+#### Choose a persmission
+
+```swift
+var rxLocation = RxLocation(authorization: .authorizeAlways)
+```
 
 #### Current Location
 
