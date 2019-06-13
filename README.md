@@ -11,6 +11,7 @@ An RX wrapper for iOS location. It's simple and powerful.
 
 ## Usage
 #### Choose a persmission
+Choose `authorizeWhenInUse` or `authorizeAlways` for permission.
 
 ```swift
 var rxLocation = RxLocation(authorization: .authorizeAlways)
