@@ -1,5 +1,11 @@
-language: swift 
-osx_image: xcode10.2.1
-xcode_project: RxLocation.xcodeproj
-xcode_scheme: RxLocation 
-xcode_sdk: iphonesimulator12.2
+#language: swift 
+#osx_image: xcode10.2.1
+#xcode_project: RxLocation.xcodeproj
+#xcode_scheme: RxLocation 
+#xcode_sdk: iphonesimulator12.2
+
+anguage:
+  - swift
+osx_image: xcode10.1
+script:
+  - xcodebuild -scheme RxLocation -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.1' build test

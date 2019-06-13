@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b95398dc-6d78-4b60-a0be-111cc958c17b" name="Default Changelist" comment="" />
+    <list default="true" id="b95398dc-6d78-4b60-a0be-111cc958c17b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.travis.yml" afterDir="false" />
+    </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/RxLocation-aengikuwhieqaxhklykjjfizmxqw/Build/Intermediates.noindex/" />
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/RxLocation-bvqovjpvjliejqczenrnvrktlwzn/Build/Intermediates.noindex/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -242,12 +244,12 @@
       <workItem from="1560294384152" duration="5910000" />
       <workItem from="1560301071063" duration="1427000" />
       <workItem from="1560302643966" duration="254000" />
-      <workItem from="1560376087184" duration="6270000" />
+      <workItem from="1560376087184" duration="6518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13861000" />
+    <option name="totallyTimeSpent" value="14109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
