@@ -46,6 +46,8 @@ To stop updates in case of using `rxLocation.requestLocationUpdates()`
 ```
 
 #### Location Manager Options
+You can set any options for CLLocationManager, for example:
+
 ```swift
   rxLocation.locationManager.showsBackgroundLocationIndicator = true
 
