@@ -2,7 +2,9 @@
 
 An RX wrapper for iOS location. It's simple and powerful.
 
-[//]: # ([![CI Status](https://img.shields.io/travis/ShabanKamell/RxLocation.svg?style=flat)](https://travis-ci.org/ShabanKamell/RxLocation-iOS))
+<!---
+[![CI Status](https://img.shields.io/travis/ShabanKamell/RxLocation.svg?style=flat)](https://travis-ci.org/ShabanKamell/RxLocation-iOS))
+-->
 [![Version](https://img.shields.io/cocoapods/v/RxLocation.svg?style=flat)](https://cocoapods.org/pods/RxLocation)
 [![License](https://img.shields.io/cocoapods/l/RxLocation.svg?style=flat)](https://cocoapods.org/pods/RxLocation)
 [![Platform](https://img.shields.io/cocoapods/p/RxLocation.svg?style=flat)](https://cocoapods.org/pods/RxLocation)
