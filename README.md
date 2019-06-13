@@ -11,32 +11,40 @@ An RX wrapper for iOS location. It's simple and powerful.
 
 ## Usage
 
+#### Current Location
+
 ```swift
 var rxLocation = RxLocation(authorization: .authorizeAlways)
-
-// Current location
 
    rxLocation.requestCurrentLocation()
       .subscribe(onNext: { location in
           print(location)
        })
-                
-// Location updates
+```
+
+#### Location Updates
+
+```swift
 
   rxLocation.requestLocationUpdates()
       .subscribe(onNext: { locations in
           print(locations[0])
        })
+```
 
-// To stop updates in case of .requestLocationUpdates()
-
+#### Stop Updates
+To stop updates in case of using `rxLocation.requestLocationUpdates()`
+```swift
   rxLocation.stopLocationUpdates()
 
-// You can set CLLLocationManager options
+```
 
+#### Location Manager Options
+```swift
   rxLocation.locationManager.showsBackgroundLocationIndicator = true
 
 ```
+
 
 ## Example
 
